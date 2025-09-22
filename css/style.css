@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+body {
+    font-family: "Onest", sans-serif !important;
+    background: #f2f2f2;
+    background: linear-gradient(45deg, rgba(242, 242, 242, 1) 0%, rgba(240, 240, 240, 1) 50%, rgba(225, 230, 230, 1) 100%);
+}
+
+#sidebar {
+    width: 25%;
+    position: fixed;
+}
+
+#shader-canvas {
+    border-radius: 2vw;
+}
+
+.overlay {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.overlay>* { grid-area: 1 / 1 / 2 / 2; }
+
+#sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar-item {
+    background-color: rgba(var(--bs-light-rgb), 0.9);
+    border-radius: 2vw;
+}
+
+.main-content {
+    padding-top: 1.5rem;
+}
+
+.main-content>* {
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* .main-content-item::before {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 100%;
+    flex-grow: 1;
+} */
+
+.main-content-item {
+    display: flex;
+    /* background: linear-gradient(45deg,rgba(42, 123, 155, 1) 0%, rgba(34, 147, 191, 1) 50%, rgba(34, 99, 125, 1) 100%); */
+    background-color: rgba(var(--bs-light-rgb), 0.9);
+}
+
+.main-content-item>* {
+    position: relative;
+    left: 25%;
+    max-width: 70%;
+}
+
+#pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 2vw;
+}
+
+#shader-canvas {
+    max-height: 96.5vh;
+}
+
+a {
+  color: rgb(31, 31, 31);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+}
+
+a:hover {
+  color: #0d6efd;
+  transition: color 0s;
+}
+
+.btn:hover {
+  color: #0d6efd;
+  transition: color 0s;
+}
+
+.project .img-container {
+    display: block;
+    width: 208;
+    height: 167;
+    border-color: #dadada;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+.project .img-container img {
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+}

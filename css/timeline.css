@@ -1,0 +1,76 @@
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: var(--bs-gray-dark);
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  top: 20px;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 10px 0 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 90%;
+  left: 5%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+  content: " ";
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+  top: 15px;
+  width: 0;
+  height: 0;
+  left: -10px;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent var(--bs-dark);;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* @media screen and (max-width: 600px) {
+.timeline::after {
+    left: 31px;
+  } 
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+    .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+    .left::after, .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+} */
