@@ -7,7 +7,7 @@ body {
 }
 
 #sidebar {
-    width: 25%;
+    max-width: max(25%, 300px);
     position: fixed;
 }
 
@@ -61,8 +61,8 @@ body {
 
 .main-content-item>* {
     position: relative;
-    left: 25%;
-    max-width: 70%;
+    left: max(25%, 300px);
+    width: calc(100% - 30px - max(25%, 300px));
 }
 
 #pic {
