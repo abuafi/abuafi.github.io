@@ -14,7 +14,7 @@ vec2 hash( vec2 p )
 }
 
 float distance_mink(vec2 r, float k) {
-    return abs(pow(r.x, k)) + abs(pow(r.y, k));
+    return pow(abs(r.x), k) + pow(abs(r.y), k);
 }
 
 // return distance, and cell id
@@ -29,7 +29,8 @@ vec2 voronoi( in vec2 x )
     {
         vec2  g = vec2( float(i), float(j) );
         vec2  o = hash( n + g );
-      //vec2  r = g - f + o;
+        // vec2  r = g - f;
+        // vec2  r = g - f + o;
 	    vec2  r = g - f + (0.5+0.5*sin(0.2*iTime+6.2831*o));
 		float d = distance_mink(r, 2.);
         if( d<m.x )
