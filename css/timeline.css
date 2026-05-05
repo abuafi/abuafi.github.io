@@ -44,12 +44,15 @@
   border-color: transparent transparent transparent var(--bs-dark);;
 }
 
-/* The actual content */
-.content {
+.timeline-content {
   padding: 20px 30px;
   background-color: white;
-  position: relative;
   border-radius: 6px;
+}
+
+/* The actual content */
+.content {
+  position: relative;
 }
 
 /* @media screen and (max-width: 600px) {

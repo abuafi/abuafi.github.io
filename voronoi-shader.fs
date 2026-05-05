@@ -18,7 +18,7 @@ float distance_mink(vec2 r, float k) {
 }
 
 // return distance, and cell id
-vec2 voronoi( in vec2 x )
+vec2 voronoi( in vec2 x, in float k )
 {
     vec2 n = floor( x );
     vec2 f = fract( x );
@@ -32,7 +32,7 @@ vec2 voronoi( in vec2 x )
         // vec2  r = g - f;
         // vec2  r = g - f + o;
 	    vec2  r = g - f + (0.5+0.5*sin(0.2*iTime+6.2831*o));
-		float d = distance_mink(r, 2.);
+		float d = distance_mink(r, k);
         if( d<m.x )
             m = vec3( d, o );
     }
@@ -45,7 +45,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec2 p = fragCoord.xy/max(iResolution.x,iResolution.y);
     
     // computer voronoi patterm
-    vec2 c = voronoi( (14.0+6.0*p ) );
+    vec2 c = voronoi( (14.0+6.0*p ), 2. );
 
     // colorize
     vec3 col = 0.5 + 0.5*cos( c.y*6.2831 + vec3(0.0,1.0,2.0) );	
