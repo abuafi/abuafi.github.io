@@ -109,6 +109,10 @@ a:hover {
     padding: 1rem;
 }
 
+.project {
+    margin-bottom: 1rem;
+}
+
 .project .img-container img {
     max-width:100%;
     max-height:100%;

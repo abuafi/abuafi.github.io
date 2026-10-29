@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1739480192.23229 "/Users/ian/Personal/cv/newcv/en/main.tex" "main.pdf" "main" 1739480192.96616 0
-  "/Users/ian/Personal/cv/newcv/en/main.tex" 1739480192.11595 9803 977fc96251ff916d09d41310f4b80fe1 ""
+["pdflatex"] 1793028493.05287 "/Users/ian/Personal/abuafi.github.io/cv/en/main.tex" "main.pdf" "main" 1793028493.70248 0
+  "/Users/ian/Personal/abuafi.github.io/cv/en/main.tex" 1793028492.87901 11699 2d7b019201947b3b513939f746bed7b7 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1710106625 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -86,9 +86,9 @@
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/url/url.sty" 1710106625 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_3/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221878 ce37e8daaa80659a0dabb4b06488c155 ""
-  "main.aux" 1739480192.87424 673 87f7cc5c47434bbc0db64ec5bc480cd4 "pdflatex"
-  "main.out" 1739480192.875 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
-  "main.tex" 1739480192.11595 9803 977fc96251ff916d09d41310f4b80fe1 ""
+  "main.aux" 1793028493.64418 673 87f7cc5c47434bbc0db64ec5bc480cd4 "pdflatex"
+  "main.out" 1793028493.64481 390 8178769a591dae54593be5dc5893bd68 "pdflatex"
+  "main.tex" 1793028492.87901 11699 2d7b019201947b3b513939f746bed7b7 ""
   (generated)
   "main.aux"
   "main.log"
